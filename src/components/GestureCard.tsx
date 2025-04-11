@@ -1,6 +1,7 @@
 
 import { cn } from "@/lib/utils";
 import { GestureType } from "@/data/gestureData";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface GestureCardProps {
   gesture: GestureType;
@@ -10,13 +11,13 @@ export function GestureCard({ gesture }: GestureCardProps) {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
-        <div className="aspect-video overflow-hidden bg-gray-100">
+        <AspectRatio ratio={16 / 9} className="bg-gray-100">
           <img 
             src={gesture.imageUrl} 
-            alt={gesture.name} 
-            className="w-full h-full object-cover"
+            alt={gesture.name}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           />
-        </div>
+        </AspectRatio>
         <div className="absolute top-0 right-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 m-3 rounded-full">
           {gesture.category}
         </div>
