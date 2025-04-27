@@ -20,7 +20,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-20 sm:py-24 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Gesture Glide
+              Handwave
               <span className="block text-indigo-200 mt-2">Master Your Mouse Controls</span>
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
@@ -96,11 +96,11 @@ const Index = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4">Gesture Glide Manual</h2>
+            <h2 className="text-2xl font-bold mb-4">Handwave Manual</h2>
             <p className="mb-6 text-gray-400">
               Master the art of gesture control for an enhanced computing experience.
             </p>
-            <p className="text-sm text-gray-500">© 2025 Gesture Glide. All rights reserved.</p>
+            <p className="text-sm text-gray-500">© 2025 Handwave. All rights reserved.</p>
           </div>
         </div>
       </footer>
